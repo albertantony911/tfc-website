@@ -22,8 +22,8 @@ body {
 }
 
 .menu-icon {
-  height: 30px;
-  width: 30px;
+  height: 30pt;
+  width: 30pt;
   position: fixed;
   z-index: 2;
   left: 50px;
@@ -32,17 +32,17 @@ body {
 }
 .menu-icon__line {
   height: 2px;
-  width: 30px;
+  width: 30pt;
   display: block;
   background-color: #ffffff;
   margin-bottom: 4px;
   transition: transform 0.2s ease, background-color 0.5s ease;
 }
 .menu-icon__line-left {
-  width: 15px;
+  width: 15pt;
 }
 .menu-icon__line-right {
-  width: 15px;
+  width: 15pt;
   float: right;
 }
 
