@@ -30,7 +30,7 @@ body{
 
 //default state
 .menu-icon{
-	$size: 30pt;
+	$size: 30px;
 	height: $size;
 	width: $size;
 	position: fixed;
@@ -62,6 +62,9 @@ body{
 	$transition--easing: cubic-bezier(.77,0,.175,1);
 	position: fixed;
 	z-index:1;
+	top: 0;
+  	left: 0;
+
 	&:before,&:after{
 		content: "";
 		position: fixed;
@@ -73,7 +76,7 @@ body{
 		transform: translateX(0%) translateY(-100%);
 	}
 	&:after{
-		background: rgba(#ffffff, 1);
+		background: rgba(#fff7f7, 1);
 		transition-delay: 0s;
 	}
 	&:before{
@@ -97,6 +100,7 @@ body{
 		transform: translate(0%, 100%);
 		transition: opacity .2s ease, transform .3s ease;
 		margin-right: 25px;
+		
 		&:before{
 			content: "";
 			position: absolute;
@@ -133,6 +137,8 @@ body.nav-active{
 	}
 	.nav{
 		visibility:visible;
+
+
 		&:before,&:after{
 			transform: translateX(0%) translateY(0%);
 		}

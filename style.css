@@ -22,8 +22,8 @@ body {
 }
 
 .menu-icon {
-  height: 30pt;
-  width: 30pt;
+  height: 30px;
+  width: 30px;
   position: fixed;
   z-index: 2;
   left: 50px;
@@ -32,23 +32,25 @@ body {
 }
 .menu-icon__line {
   height: 2px;
-  width: 30pt;
+  width: 30px;
   display: block;
   background-color: #ffffff;
   margin-bottom: 4px;
   transition: transform 0.2s ease, background-color 0.5s ease;
 }
 .menu-icon__line-left {
-  width: 15pt;
+  width: 15px;
 }
 .menu-icon__line-right {
-  width: 15pt;
+  width: 15px;
   float: right;
 }
 
 .nav {
   position: fixed;
   z-index: 1;
+  top: 0;
+  left: 0;
 }
 .nav:before, .nav:after {
   content: "";
@@ -61,7 +63,7 @@ body {
   transform: translateX(0%) translateY(-100%);
 }
 .nav:after {
-  background: white;
+  background: #fff7f7;
   transition-delay: 0s;
 }
 .nav:before {
