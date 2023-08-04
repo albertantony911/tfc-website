@@ -98,7 +98,7 @@ body {
   width: 100%;
   text-align: center;
   font-size: 2vw;
-  font-weight: 200;
+  font-weight: 300;
 }
 .nav__list-item {
   position: relative;
@@ -108,7 +108,7 @@ body {
   transform: translate(0%, 100%);
   transition: opacity 0.2s ease, transform 0.3s ease;
   text-transform: uppercase;
-  text-shadow: 0 0.1em 0.1em rgb(151, 151, 153);
+  text-shadow: 0 0.1em 0.1em rgb(255, 241, 255);
   margin-bottom: 20%;
   cursor: pointer;
 }
