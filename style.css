@@ -97,13 +97,14 @@ body {
   transform: translate(0%, -50%);
   width: 100%;
   text-align: center;
-  font-size: 6vw;
+  font-size: 2vw;
   font-weight: 300;
 }
 .nav__list-item {
   position: relative;
   display: grid;
   transition-delay: 0.8s;
+  background-color: rgb(204, 132, 38);
   opacity: 0;
   transform: translate(0%, 100%);
   transition: opacity 0.2s ease, transform 0.3s ease;
@@ -114,6 +115,62 @@ body {
 }
 .nav__list-item:hover:before {
   width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .nav {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+  }
+  .nav:before, .nav:after {
+    content: "";
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(234, 234, 234, 0.2);
+    z-index: -1;
+    transition: transform cubic-bezier(0.77, 0, 0.175, 1) 0.8s;
+    transform: translateX(0%) translateY(-100%);
+  }
+  .nav:after {
+    background: #fff7f7;
+    transition-delay: 0s;
+  }
+  .nav:before {
+    transition-delay: 0.1s;
+  }
+  .nav__content {
+    position: fixed;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    top: 55%;
+    left: -10%;
+    transform: translate(0%, -50%);
+    width: 100%;
+    text-align: left;
+    font-size: 19pt;
+    font-weight: 300;
+  }
+  .nav__list-item {
+    position: relative;
+    display: grid;
+    transition-delay: 0.8s;
+    background-color: rgba(113, 38, 204, 0);
+    opacity: 0;
+    transform: translate(0%, 100%);
+    transition: opacity 0.2s ease, transform 0.3s ease;
+    text-transform: uppercase;
+    text-shadow: 0 0.1em 0.1em rgb(255, 241, 255);
+    margin-bottom: 20%;
+    cursor: pointer;
+  }
+  .nav__list-item:hover:before {
+    width: 100%;
+  }
 }
 
 body.nav-active .menu-icon__line {

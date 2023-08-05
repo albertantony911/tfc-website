@@ -1,0 +1,649 @@
+// *******************
+// Fonts
+// *******************
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+$font-primary: "Poppins", Helvetica, Arial, sans-serif;
+
+html,
+body {
+  font-family: $font-primary;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.1;}
+
+// *******************
+// Headings
+// *******************
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.1;
+  font-family: $font-primary;
+  font-weight: 700;
+  margin-bottom: 0.75em;
+  letter-spacing: -1px;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2.827em;
+}
+
+h4 {
+  font-size: 2.1em;
+}
+
+h5 {
+  font-size: 1.6em;
+}
+
+h6 {
+  font-size: 1.2em;
+}
+
+// *******************
+// Colour
+// *******************
+
+$colour-1: #01C93D;
+$colour-2: #F3F7FF;
+$colour-3: #8b8b8b;
+$colour-4: #3e486a;
+$colour-5: #f0f0f0;
+$black: #000;
+$white: #fff;
+
+body {
+  height: 1000px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+// *******************
+// Breakpoints
+// *******************
+
+$breakpoint-desktop: 1200px;
+$breakpoint-laptop: 960px;
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 600px;
+
+// *******************
+// Navigation
+// *******************
+
+.nav-bar {
+  height: auto;
+  width: 100%;
+  z-index: 999;
+  border-bottom: none;
+  background-color: #161616;
+  position: absolute;
+  display: block;
+}
+
+.lock-scroll {
+  overflow: hidden;
+}
+
+.unlock-scroll {
+  overflow-y: scroll;
+}
+
+.container-nav {
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    height: auto;
+    font-weight: 400;
+    .logo {
+      order: 0;
+      width: auto;
+      padding: 1rem 0;
+      a {
+        text-decoration: none;
+        line-height: 0;
+        img {
+          width: auto;
+          height: auto;
+        }
+        svg {
+          height: auto;
+          width: clamp(10rem, 10vw, 12rem);
+          .st0 {
+            fill: $colour-1;
+          }
+          .st1 {
+            fill: $white;
+          }
+          .st2 {
+            fill: $white;
+          }
+        }
+      }
+    }
+    button {
+      margin: 0;
+      &:focus {
+        outline: 0;
+      }
+    }
+    button.menu {
+      order: 3;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      display: -webkit-box;
+      display: none;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      flex-direction: row;
+      -webkit-box-pack: flex-end;
+      justify-content: flex-end;
+      -webkit-box-align: flex-end;
+      padding: 0;
+      height: 2.5rem;
+      line-height: 2.5rem;
+      svg {
+        height: 100%;
+      }
+      span {
+        color: $colour-1;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-family: inherit;
+        visibility: hidden;
+        font-size: 0.8rem;
+      }
+    }
+    .line {
+      fill: none;
+      stroke: $colour-1;
+      stroke-width: 7;
+      stroke-linecap: round;
+      transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+        stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .line1 {
+      stroke-dasharray: 60 207;
+      stroke-width: 7;
+      stroke-linecap: round;
+    }
+    .line2 {
+      stroke-dasharray: 60 60;
+      stroke-width: 7;
+      stroke-linecap: round;
+    }
+    .line3 {
+      stroke-dasharray: 60 207;
+      stroke-width: 7;
+      stroke-linecap: round;
+    }
+    ul.nav-main {
+      order: 1;
+      width: 100%;
+      max-width: 750px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      padding: 0 1rem;
+      color: $colour-2;
+      li {
+        display: inline-block;
+        margin: 0;
+        padding: 0 0.5rem;
+        position: relative;
+        a {
+          font-size: clamp(0.675rem, 1vw, 0.8rem);
+          display: inline-block;
+          line-height: 1;
+          text-decoration: none;
+          color: $white;
+          padding: 0 0.5em;
+          &:first-of-type {
+            padding-left: 0;
+          }
+          &:last-of-type {
+            padding-right: 0;
+          }
+          &:hover {
+            color: $colour-1;
+          }
+          &:focus {
+            color: $colour-1;
+          }
+          &:active {
+            color: $white;
+          }
+          &:visited {
+            color: $white;
+          }
+        }
+        a.dropdown:after {
+          display: inline-block;
+          content: " ";
+          background-image: url("../../../dist/img/icons/arrow_down.svg");
+          background-size: 1em 1em;
+          height: 0.9em;
+          width: 1em;
+          margin-left: 0.3em;
+          line-height: inherit;
+        }
+        .submenu {
+          display: none;
+          position: absolute;
+          background-color: rgba(22, 22, 23, 1);
+          border-radius: 10px;
+          width: auto;
+          height: auto;
+          padding: 2rem 1rem 1rem;
+          left: -1rem;
+          top: 0;
+          z-index: -1;
+          ul {
+            list-style-type: disc;
+            list-style-position: outside;
+            margin-bottom: 0rem;
+            margin-left: 0rem;
+            li {
+              padding: 0.75em 0;
+              display: block;
+              border-bottom: 1px solid rgb(134, 134, 139);
+              a {
+                font-size: clamp(0.675rem, 1vw, 0.8rem);
+                &:hover {
+                  color: $colour-1;
+                }
+              }
+              &:first-of-type {
+                padding-top: 0;
+              }
+              &:last-of-type {
+                border-bottom: none;
+                padding-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+      li.selected {
+        a.dropdown:after {
+          display: inline-block;
+          content: " ";
+          background-image: url("../../../dist/img/icons/arrow_up.svg");
+          background-size: 1em 1em;
+          height: 0.9em;
+          width: 1em;
+          margin-left: 0.3em;
+          line-height: inherit;
+        }
+        .submenu {
+          display: block;
+          position: absolute;
+          background-color: rgba(22, 22, 23, 1);
+          border-radius: 10px;
+          width: 200px;
+          height: auto;
+          padding: 2rem 1rem 1rem 1rem;
+          left: -9px;
+          top: 1rem;
+          z-index: -1;
+          animation: fadein 0.5s;
+          -moz-animation: fadein 0.5s; /* Firefox */
+          -webkit-animation: fadein 0.5s; /* Safari and Chrome */
+          -o-animation: fadein 0.5s; /* Opera */
+          ul {
+            list-style-type: disc;
+            list-style-position: outside;
+            margin-bottom: 0rem;
+            margin-left: 0rem;
+            li {
+              padding: 0.75em 0;
+              display: block;
+              border-bottom: 1px solid rgb(134, 134, 139);
+              a {
+                font-size: clamp(0.675rem, 1vw, 0.8rem);
+                &:hover {
+                  color: $colour-1;
+                }
+              }
+              &:first-of-type {
+                padding-top: 0;
+              }
+              &:last-of-type {
+                border-bottom: none;
+                padding-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    .nav-contact {
+      order: 4;
+      display: flex;
+      opacity: 1;
+      justify-content: space-between;
+      align-items: center;
+      a {
+        text-decoration: none;
+        padding-right: clamp(0.5rem, 1vw, 0.75rem);
+        svg {
+          width: clamp(0.6rem, 1vw, 0.8rem);
+          height: clamp(0.6rem, 1vw, 0.8rem);
+          fill: $colour-1;
+        }
+        &:hover {
+          svg {
+            fill: $colour-2;
+          }
+        }
+      }
+      a:nth-last-child(1) {
+        padding: 0;
+      }
+    }
+    .nav-cta {
+      order: 5;
+      display: none;
+      opacity: 1;
+      margin-top: 3rem;
+      margin-bottom: 10rem;
+      .menu-cta-title {
+        color: $colour-1;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 0.3em;
+      }
+      .menu-cta-text {
+        color: $colour-5;
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 1.5em;
+        line-height: 1.1;
+      }
+    }
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-desktop) {
+  .container-nav {
+    width: 85%;
+    nav {
+      .nav-contact {
+        display: none;
+      }
+      ul.nav-main {
+        max-width: 63vw;
+        margin-left: 0;
+        margin-right: 0;
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .nav-bar {
+    height: 100vh;
+    background-color: $white;
+  }
+  .container-nav {
+    nav {
+      .logo {
+        order: 0;
+        width: auto;
+        a {
+          text-decoration: none;
+          line-height: 0;
+          img {
+            width: auto;
+            height: auto;
+          }
+          svg {
+            height: auto;
+            width: clamp(10rem, 10vw, 12rem);
+            .st0 {
+              fill: $colour-1;
+            }
+            .st1 {
+              fill: $white;
+            }
+            .st2 {
+              fill: $white;
+            }
+          }
+        }
+      }
+      button.menu {
+        order: 1;
+        width: auto;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: row;
+        -webkit-box-pack: flex-end;
+        justify-content: flex-end;
+        -webkit-box-align: flex-end;
+        padding: 0;
+        margin: 1rem 0;
+        height: 2.5rem;
+        line-height: 2.5rem;
+        svg {
+          height: 100%;
+        }
+        span {
+          color: $colour-1;
+          text-transform: uppercase;
+          font-weight: 600;
+          font-family: inherit;
+          visibility: none;
+          display: none;
+          font-size: 0.8rem;
+        }
+      }
+      ul.nav-main {
+        order: 3;
+        width: 100%;
+        max-width: 100vw;
+        color: $colour-5;
+        margin: 3rem 0 4rem 0;
+        display: block;
+        padding-left: 0;
+        li {
+          display: block;
+          padding: 0.75em 0;
+          a {
+            font-size: 1.3rem;
+            display: inline-block;
+            line-height: 1;
+            text-decoration: none;
+            font-style: italic;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0px;
+            color: $black;
+            &:first-of-type {
+              padding-top: 0;
+            }
+            &:last-of-type {
+              padding-bottom: 0;
+            }
+            &:hover {
+              color: $black;
+            }
+            &:focus {
+              color: $black;
+            }
+            &:active {
+              color: $black;
+            }
+            &:visited {
+              color: $black;
+            }
+          }
+        }
+        li.selected {
+          .submenu {
+            display: block;
+            position: relative;
+            background-color: transparent;
+            border-radius: 0;
+            width: 100%;
+            height: auto;
+            padding: 1rem 1rem;
+            left: -1rem;
+            ul {
+              list-style-type: disc;
+              list-style-position: outside;
+              margin-bottom: 0rem;
+              margin-left: 0rem;
+              li {
+                padding: 0.5em 0;
+                display: block;
+                border-bottom: none;
+                a {
+                  font-size: 0.85em;
+                  text-transform: none;
+                  font-style: normal;
+                  font-weight: 400;
+                  &:hover {
+                    color: $black;
+                  }
+                  &:focus {
+                    color: $black;
+                  }
+                  &:active {
+                    color: $black;
+                  }
+                  &:visited {
+                    color: $black;
+                  }
+                }
+                &:first-of-type {
+                  padding-top: 0;
+                }
+                &:last-of-type {
+                  border-bottom: none;
+                  padding-bottom: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+      .nav-cta {
+        order: 4;
+        width: 100%;
+        display: block;
+        margin: 0 0 5rem 0;
+        .menu-cta {
+          color: $black;
+          font-size: 1.6rem;
+          font-weight: 600;
+          line-height: 1.1;
+          margin-bottom: 0.3em;
+          span {
+            color: $colour-1;
+          }
+        }
+      }
+      .nav-contact {
+        order: 5;
+        width: 100%;
+        display: block;
+        margin-bottom: 10rem;
+        a {
+          text-decoration: none;
+          padding-right: 1rem;
+          svg {
+            width: 2rem;
+            height: 2rem;
+            fill: $colour-1;
+          }
+          &:hover {
+            svg {
+              fill: $colour-1;
+            }
+          }
+          &:focus {
+            svg {
+              fill: $colour-1;
+            }
+          }
+          &:active {
+            svg {
+              fill: $colour-1;
+            }
+          }
+          &:visited {
+            svg {
+              fill: $colour-1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
