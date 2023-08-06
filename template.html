@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+    <title>Project_Studio</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- FAVICONS -->
+    <link rel="stylesheet" href="template.css">
+    <link rel="shortcut icon" href="images/favicon/favicon_white.png">
+    <link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-touch-icon-114x114.png">
+
+    <!-- CSS -->
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700%7COpen+Sans:400,300,700" rel="stylesheet"
+        type='text/css'>
+    <link rel="stylesheet" href="css/icons-fonts.css">
+    <link rel="stylesheet" href="css/text-rotator.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+
+
+    <!-- CSS end -->
+
+    <!-- JS begin -->
+    <script src="js/modernizr.js"></script>
+
+
+</head>
+
+<body>
+
+    <!-- LOADER -->
+    <div id="loader-overflow">
+        <div id="loader3">Please enable JS</div>
+    </div>
+
+    <div id="wrap" class="boxed ">
+        <div class="grey-bg">
+
+
+            <!-- HEADER side menu -->
+            <header id="nav-stick2" class="header header-1 header-side-menu fixed white ">
+                <div class="header-wrapper">
+                    <div class="container-m-30 clearfix">
+                        <div class="logo-row logo-hiding">
+
+                            <!-- LOGO -->
+                            <div class="logo-container-2">
+                                <div class="logo-2">
+                                    <a href="#" class="clearfix">
+                                        <img src="images/logo_header.png" class="logo-img" alt="Logo">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- BUTTON -->
+                    <div class="menu-btn-respons-container2">
+                        <a class="fs-primary-nav-trigger" href="#"><span class="fs-menu-icon"></span></a>
+                    </div>
+                </div> <!-- END header-wrapper -->
+
+            </header>
+
+
+
+
+
+
+
+
+            <!-- Slide Item -->
+            <div>
+                <div class="relative">
+                    <div class="row plr-50">
+                        <div class="col-md-7">
+                            <blockquote class="testimonial-2">
+                                <p>Fortune favours the bold. Try and see what the future holds.
+                                </p>
+                            </blockquote>
+                        </div>
+
+                        <div class="col-md-4 col-md-offset-1">
+                            <div class="ts-author-cont">
+                                <div class="ts-author-info">
+                                    <div class="ts-name">
+                                        <span class="bold">Alexander P J</span>
+                                    </div>
+                                    <div class="ts-type">FOUNDER</div>
+                                </div>
+                                <div class="ts-author-img">
+                                    <img src="images/profile-author.jpg" alt="photo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- GOOGLE MAP & CONTACT FORM -->
+        <div class="page-section gray-bg">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <div class="row">
+
+                            <div data-latitude="37.792888" data-longitude="-122.404041" id="google-map"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="contact-form-cont">
+                            <!-- TITLE -->
+                            <div class="mb-40">
+                                <h2 class="section-title">HAVE A <span class="bold">QUESTION?</span></h2>
+                            </div>
+
+                            <!-- CONTACT FORM -->
+                            <div class="">
+                                <form id="contact-form" action="php/contact-form.php" method="POST">
+
+                                    <div class="row">
+                                        <div class="col-md-12 mb-30">
+                                            <!-- <label>Your name *</label> -->
+                                            <input type="text" value="" data-msg-required="Please enter your name"
+                                                maxlength="100" class="controled" name="name" id="name"
+                                                placeholder="NAME" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12 mb-30">
+                                            <!-- <label>Your email address *</label> -->
+                                            <input type="email" value=""
+                                                data-msg-required="Please enter your email address"
+                                                data-msg-email="Please enter a valid email address" maxlength="100"
+                                                class="controled" name="email" id="email" placeholder="EMAIL" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12 mb-40">
+                                            <!-- <label>Message *</label> -->
+                                            <textarea maxlength="5000" data-msg-required="Please enter your message"
+                                                rows="3" class="controled" name="message" id="message"
+                                                placeholder="MESSAGE" required></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12 text-center-xxs">
+                                            <input type="submit" value="SEND MESSAGE" class="button medium blue"
+                                                data-loading-text="Loading...">
+
+                                            <a class="button medium blue" href="#">FAQ</a>
+                                        </div>
+                                    </div>
+
+                                </form>
+                                <div class="alert alert-success hidden animated fadeIn" id="contactSuccess">
+                                    <strong>Success!</strong> Your message has been sent to us.
+                                </div>
+
+                                <div class="alert alert-danger hidden animated shake" id="contactError">
+                                    <strong>Error!</strong> There was an error sending your message.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer id="footer7" class="page-section text-center p-100-cont footer2-black">
+            <div class="container">
+
+                <!-- Social Links -->
+                <div class="footer-soc-a footer-soc-a -2">
+                    <a class="a-white" href="#" title="Facebook" target="#"><i class="social_facebook_circle"></i></a>
+                    <a class="a-white" href="#" title="Twitter" target="#"><i class="social_instagram"></i></a>
+                    <a class="a-white" href="#" title="Behance" target="#"><i class="fa fa-behance"></i></a>
+                    <a class="a-white" href="#" title="LinkedIn+" target="#"><i class="social_twitter_circle"></i></a>
+                    <a class="a-white" href="#" title="Dribbble" target="#"><i class="fa fa-dribbble"></i></a>
+                    <a class="a-white" href="#" title="Dribbble" target="#"><i class="social_linkedin_circle"></i></a>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-copy">
+                <br><a href="#" target="#">&copy; ALBERT 2023</a>
+            </div>
+
+    </div>
+    </footer>
+
+    <!-- MENU -->
+    <nav>
+        <div class="fs-primary-nav fs-sub-nav">
+
+            <div class="fs-table">
+                <div class="fs-table-cell">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">PORTFOLIO</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">FAQ</a></li>
+
+                        <li class="fs-label">HAVE A QUESTION?</li>
+
+                        <li class="fs-a-sec"><a href="#">ENQUIRIES</a></li>
+                        <li class="fs-a-sec"><a href="#">GET STARTED</a></li>
+
+
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- BACK TO TOP -->
+    <p id="back-top">
+        <a href="#top" title="Back to Top"><span class="icon icon-arrows-up"></span></a>
+    </p>
+
+    </div><!-- End BG -->
+    </div><!-- End wrap -->
+
+    <!-- JS begin -->
+
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src='js/jquery.magnific-popup.min.js'></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/text-rotator.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/fs-menu.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false&callback=myMap"></script>
+    <script src="js/gmap3.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/contact-form-validation.min.js"></script>
+
+    <!-- JS end -->
+
+</body>
+
+</html>

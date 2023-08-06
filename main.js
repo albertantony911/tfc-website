@@ -25,16 +25,25 @@ function init() {
     let menu = document.querySelector('.menu-icon');
     let menuItems = document.querySelectorAll('.nav__list-item');
 
+    // Add event listener to menu icon
     menu.addEventListener('click', () => {
         toggleClass(body, 'nav-active');
 
-        // When 'nav-active' class is added, disable links
         if (body.classList.contains('nav-active')) {
             disableLinks();
         } else {
-            // When 'nav-active' class is removed, enable links
             enableLinks();
         }
+    });
+
+    // Add event listeners to menu items
+    menuItems.forEach(function (menuItem) {
+        menuItem.addEventListener('click', function (event) {
+            // Prevent default behavior if 'nav-active' class is not present
+            if (!body.classList.contains('nav-active')) {
+                event.preventDefault();
+            }
+        });
     });
 }
 
