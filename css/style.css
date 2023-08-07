@@ -2974,8 +2974,11 @@ ul.contact-list li{
 	position:relative;
   justify-content: center;
   
-  padding:80px 25% 30px 25%;
+  padding:80px 20vw 30px 20vw;
 }
+
+
+
 .contact-form-container-left {
 	position: relative;
 	margin:0 0 0 40px;
