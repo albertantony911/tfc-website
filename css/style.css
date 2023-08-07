@@ -2971,9 +2971,10 @@ ul.contact-list li{
 /* #CONTACT FORM #NEW
 =====================================================*/
 .contact-form-cont {
-	position: relative;
-  max-width:550px;
-  padding:80px 50px 30px 60px;
+	position:relative;
+  justify-content: center;
+  
+  padding:80px 25% 30px 25%;
 }
 .contact-form-container-left {
 	position: relative;
