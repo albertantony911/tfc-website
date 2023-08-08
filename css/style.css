@@ -10844,8 +10844,8 @@ ul#flickr-feeds li a, ul#flickr-sfeeds li a img {
   }
 }
 .filter-invert{
-  -webkit-filter: brightness(0) invert(1);
-          filter: brightness(0) invert(1);
+  -webkit-filter: brightness(0) invert(0);
+          filter: brightness(0) invert(0);
 }
 .filter-none{
   -webkit-filter: none;
