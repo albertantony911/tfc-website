@@ -1,0 +1,27 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+section {
+  height: 100vh; /* Make each section full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+
+section {
+  transition: transform 1s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Adjust cubic-bezier values */
+}
