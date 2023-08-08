@@ -2520,7 +2520,6 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
 .sm-cont-middle {
   display: table-cell;
   height: 100%;
-  
   padding-top: 20vh;
 }
 
@@ -2528,7 +2527,8 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
   display: table-cell;
   height: 100%;
   vertical-align: middle;
-
+  padding-top: 500vh;
+  
 }
 
 /***** BG VIDEO *****/
@@ -9933,27 +9933,37 @@ header.is-fixed {
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
   transform: translateY(0);
+  
 }
 @media only screen and (max-width: 480px) {
   .fs-primary-nav>ul {
     margin-top:20px;
+    transition: transform cubic-bezier(0.77, 0, 0.175, 1) 0.9s;
+    transform: translateX(0%) translateY(-100%);
   }
   .fs-primary-nav li {
     font-size: 16px;
     letter-spacing:1px;
     font-weight:400;
     margin: 0;
+    transition: transform cubic-bezier(0.77, 0, 0.175, 1) 0.9s;
+    transform: translateX(0%) translateY(-100%);
   }
 }
 @media only screen and (min-width: 768px) {
   .fs-primary-nav {
     padding: 80px 0;
+    transition: transform cubic-bezier(0.77, 0, 0.175, 1) 0.9s;
+    transform: translateX(0%) translateY(-100%);
+    
   }
 }
 @media only screen and (min-width: 1170px) {
   .fs-primary-nav li {
     font-size: 32px;
      margin: .4em 0;
+     transition: transform cubic-bezier(0.77, 0, 0.175, 1) 0.9s;
+    transform: translateX(0%) translateY(-100%);
   }
   .fs-primary-nav .fs-label {
     font-size: 16px !important;
