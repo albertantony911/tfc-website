@@ -993,6 +993,7 @@ support for no js
 .fes2-main-text-cont {
   margin: 0 auto;
   padding: 145px 50px 140px 50px;
+  text-align: left;
   max-width:500px; 
 }
 .fes2-text-cont{
@@ -1027,7 +1028,7 @@ support for no js
 	font-weight: 300;
 }
 .fes3-img {
-  background: url(../images/fes3.jpg) 50% 50% no-repeat;
+  background: url(../images/placeholder.png) 50% 50% no-repeat;
   background-size: cover;
   
   width: 100%;
@@ -1041,6 +1042,25 @@ support for no js
   background-repeat: no-repeat;
   background-position: center center;
 }
+
+.fes2-img {
+  background: url(../images/placeholder.png) 50% 50% no-repeat;
+  background-size: cover;
+  
+  width: 100%;
+  display: block;	
+  position: relative;
+  background-size: cover;
+     
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+
 .line-3-70{
 	margin-top:11px;
 	height:3px;
@@ -3036,6 +3056,13 @@ select.input-border {
   font-size:16px;
   padding:12px;
   color:var(--white);
+}
+
+
+.footer-soc-b a {
+  font-size:16px;
+  padding:12px;
+  color:var(--dark_purple);
 }
 
 /* #FOOTER 2 NEW
