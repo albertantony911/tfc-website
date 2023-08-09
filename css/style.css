@@ -141,7 +141,7 @@ body {
 	font-size: 15px;
 	line-height: 26px;
 	font-family: 'Poppins', Arial, Helvetica, sans-serif;
-  letter-spacing: 0.09rem;
+  letter-spacing: 0.1rem;
   font-kerning: auto;
  
 	font-weight:300;
@@ -657,6 +657,17 @@ support for no js
   letter-spacing:25px;
   color:#4b4e53;
 }
+
+.bold-title-text{
+	font-family: 'Poppins',Arial,Helvetica,sans-serif;
+	font-size: 72px;
+	line-height: 72px;
+	font-weight: 300;
+  letter-spacing:25px;
+  color:#4b4e53;
+}
+
+
 .light-70-wide{
 	font-family: 'Lato',Arial,Helvetica,sans-serif;
 	font-size: 70px;
