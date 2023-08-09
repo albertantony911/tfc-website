@@ -9891,7 +9891,7 @@ header.is-fixed {
   transform: translateX(-100%) translateY(-50%);
   width: 24px;
   height: 2px;
-  background-color: var(--dark_purple);
+  background-color: var(--light_purple);
   -webkit-transition: background-color 0.3s;
   -o-transition: background-color 0.3s;
   transition: background-color 0.3s;
@@ -9905,7 +9905,7 @@ header.is-fixed {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: var(--dark_purple);
+  background-color: var(--light_purple);
   right: 0;
   -webkit-transition: -webkit-transform .3s, top .3s, background-color 0s;
   -webkit-transition: top .3s, background-color 0s, -webkit-transform .3s;
@@ -9930,7 +9930,7 @@ header.is-fixed {
   background-color: rgba(255, 255, 255, 0);
 }
 .fs-primary-nav-trigger .fs-menu-icon.is-clicked::before, .fs-primary-nav-trigger .fs-menu-icon.is-clicked::after {
-  background-color: var(--white);
+  background-color: var(--light_purple);
 }
 .black-header .fs-primary-nav-trigger .fs-menu-icon.is-clicked::before, .black-header .fs-primary-nav-trigger .fs-menu-icon.is-clicked::after {
   background-color: #fff;
@@ -10372,6 +10372,7 @@ ul#flickr-feeds li a, ul#flickr-sfeeds li a img {
 .logo-hiding {
   opacity:1;
   visibility:visible;
+  
 }
  .logo-hide {
   opacity:0;
