@@ -723,11 +723,11 @@ function initPageSliders(){
 			  $(".owl-clients-auto").owlCarousel({
 			 
 				  //Set AutoPlay to 3 seconds
-          autoPlay : 5000,
+          autoPlay : 2000,
 				  items : 5,
-				  itemsDesktop : [1000,4], 
-          itemsDesktopSmall : [900,3], 
-          itemsTablet: [470,1], 
+				  itemsDesktop : [1000,5], 
+          itemsDesktopSmall : [900,4], 
+          itemsTablet: [470,2], 
           itemsMobile : false, 
 				  
 				  //Pagination
