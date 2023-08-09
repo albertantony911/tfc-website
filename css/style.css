@@ -6848,11 +6848,13 @@ h3.ui-accordion-header:first-child {
 .price-container .price {
 	font-size: 60px;
 	line-height: 50px;
+  
 }
 .pricing-table ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+  
 	
 }
 .pricing-table ul li {
