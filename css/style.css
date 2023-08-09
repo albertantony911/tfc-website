@@ -662,10 +662,24 @@ support for no js
 	font-family: 'Poppins',Arial,Helvetica,sans-serif;
 	font-size: 72px;
 	line-height: 72px;
-	font-weight: 300;
+	font-weight: 500;
   letter-spacing:25px;
-  color:#4b4e53;
+  color:var(--dark_purple);
 }
+
+.small-title-text{
+	font-family: 'Poppins',Arial,Helvetica,sans-serif;
+	font-size: 19px;
+	line-height: 30px;
+	font-weight: 300;
+  letter-spacing:1px;
+  color:var(--dark_purple);
+}
+
+
+style="background-color: var(--dark_purple);
+  color: var(--white);"
+ 
 
 
 .light-70-wide{
@@ -981,13 +995,14 @@ support for no js
 .fes2-text-cont{
 	margin-top:30px;
 }
-.fes2-img {
-  background: url(../images/fes2.jpg) 50% 50% no-repeat;
+.language-img {
+  background: url(../images/india-map.png) 50% 50% no-repeat;
   
   width: 100%;
   display: block;	
   position: relative;
   background-size: cover;
+  height:inherit;
      
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -996,6 +1011,11 @@ support for no js
   background-repeat: no-repeat;
   background-position: center center;
 }
+
+
+
+
+
 .title-fs-45 {
 	color:#13294B;
 	font-family: 'Lato',Arial,Helvetica,sans-serif;
@@ -2538,6 +2558,18 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
   }
 
 
+  .sm-content-cont .small-title-text , .sm-content-cont-fullscr .small-title-text{
+    font-size:12px;
+    line-height:22px;
+    letter-spacing:1px;
+  }
+  .small-title-text, .sm-content-cont .light-50-wide {
+    font-size:12px;
+    line-height:21px;
+    letter-spacing:1px;
+  }
+
+
 
 
   
@@ -3713,7 +3745,7 @@ background:none;
 header .logo {
 	display: block;
 	padding-bottom: 15px;
-	padding-left: 45px;
+	padding-left: 25px;
   padding-top: 81px;
 	-webkit-transition: all .4s ease 0s;
 	-o-transition: all .4s ease 0s;
