@@ -9810,7 +9810,7 @@ header.is-fixed {
   transform: translateX(-100%) translateY(-50%);
   width: 24px;
   height: 2px;
-  background-color: var(--white);
+  background-color: var(--dark_purple);
   -webkit-transition: background-color 0.3s;
   -o-transition: background-color 0.3s;
   transition: background-color 0.3s;
@@ -9824,7 +9824,7 @@ header.is-fixed {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: var(--white);
+  background-color: var(--dark_purple);
   right: 0;
   -webkit-transition: -webkit-transform .3s, top .3s, background-color 0s;
   -webkit-transition: top .3s, background-color 0s, -webkit-transform .3s;
@@ -10193,7 +10193,7 @@ ul#flickr-feeds li a, ul#flickr-sfeeds li a img {
   position:fixed !important;
 }
 #nav-stick2.has-bg.white .header-wrapper{
-  background: var(--dark_purple);
+  background: var(--white);
   -webkit-box-shadow: 0 1px 15px rgba(0,0,0, .15);
 	box-shadow: 0 1px 15px rgba(0,0,0, .15);
 }
