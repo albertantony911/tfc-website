@@ -667,6 +667,10 @@ support for no js
   color:var(--dark_purple);
 }
 
+.bg-color{
+ background-color: #4b4e53;
+}
+
 .small-title-text{
 	font-family: 'Poppins',Arial,Helvetica,sans-serif;
 	font-size: 19px;
@@ -2602,6 +2606,12 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
   display: table-cell;
   height: 100%;
   padding-top: 20vh;
+}
+
+.sm-cont-middle-vertical {
+  display: table-cell;
+  height: 100vh;
+  vertical-align: middle;
 }
 
 .sm-cont-left {
@@ -6815,8 +6825,11 @@ h3.ui-accordion-header:first-child {
 	text-align:center;
 }
 .pt-content-container {
-	border-right:2px solid #4b4e53;
-	border-left:2px solid #4b4e53;
+	border: 3px solid var(--dark_purple);
+  border-top: none;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  
 }
 .pt-best .pt-content-container {
 	border-right:2px solid #fff;
@@ -6841,23 +6854,29 @@ h3.ui-accordion-header:first-child {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	background-color: #fff;
+	
 }
 .pricing-table ul li {
-	background: #fff;
+	
 	margin: 0;
 	padding: 0;
 	display: block;
 	color: #6b6b6b;
 	line-height: 50px;
 	border-bottom: 1px solid #efefef;
-	margin-left: 20px;
+	margin: 0 20px 20px 20px;
 }
 .price-container {
-	background-color: #4b4e53;
-	padding: 20px 20px 15px 20px;
+	background:var(--dark_purple);
+	color:var(--white);
+	padding: 30px 20px 15px 20px;
 	position: relative;
 	text-align: center;
+  
+  font-size: larger;
+  font-weight: 500;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
 }
 
 /*****	#PRICING TABLE HORIZONTAL	*****/
