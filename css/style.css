@@ -2515,7 +2515,7 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
   .sm-content-cont {
     height: 350px; /*300*/
   }
-  .sm-content-cont .light-72-wide .bold-title-text, .sm-content-cont-fullscr .light-72-wide .bold-title-text{
+  .sm-content-cont .light-72-wide , .sm-content-cont-fullscr .light-72-wide{
     font-size:25px;
     line-height:30px;
     letter-spacing:3px;
@@ -2526,13 +2526,21 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
     letter-spacing:1px;
   }
 
-  .bold-title-text{
+  .sm-content-cont .bold-title-text , .sm-content-cont-fullscr .bold-title-text{
+    font-size:25px;
+    line-height:30px;
+    letter-spacing:3px;
+  }
+  .bold-title-text, .sm-content-cont .light-50-wide {
     font-size:21px;
     line-height:30px;
     letter-spacing:1px;
   }
 
 
+
+
+  
   .slider-text-bg {
     height:45%;
     height:50%;
@@ -2554,7 +2562,7 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  .sm-content-cont .light-72-wide, .sm-content-cont-fullscr .light-72-wide{
+  .sm-content-cont .light-72-wide , .sm-content-cont-fullscr .light-72-wide .sm-content-cont .bold-title-text , .sm-content-cont-fullscr .bold-title-text{
     letter-spacing:5px;
   }
 }
