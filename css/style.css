@@ -141,7 +141,7 @@ body {
 	font-size: 14px;
 	line-height: 25px;
 	font-family: 'Poppins', Arial, Helvetica, sans-serif;
-  letter-spacing: 1px;
+  font-kerning: 2rem;
  
 	font-weight:300;
 	color: #57585a;
@@ -2018,6 +2018,8 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
   line-height: 32px;
   font-weight: 100;
   font-style: normal;
+  text-align: left;
+  justify-content: start;
 }
 .testimonial-2 {
   padding: 10px 20px;
@@ -5017,7 +5019,7 @@ ul#portfolio {
 ===============================================================*/
 /***** #HEADINGS *****/
 h1, h2, h3{
-	font-family: 'Lato',Arial,Helvetica,sans-serif;
+	font-family: 'Poppins',Arial,Helvetica,sans-serif;
 	font-weight:normal;
 	color: #4b4e53;
 	margin: 0;
