@@ -133,6 +133,7 @@ background-color: #648ccb;
 
 body {
   border: 0 none;
+  
   font-size: 100%;
   margin: 0;
   outline: 0 none;
@@ -9875,6 +9876,7 @@ header.is-fixed {
   top: 0;
   height: 100%;
   width: 50px;
+  
 }
 .fs-primary-nav-trigger .fs-menu-icon {
   /* this span is the central line of the menu icon */
