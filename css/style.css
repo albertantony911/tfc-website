@@ -3848,7 +3848,8 @@ header.affix  .logo-2, .header.affix.no-transparent .logo-2 {
 	transition: all .4s ease 0s;
 }
 .logo-img {
-  height: 42px;
+  height: 50px;
+  
 }
 .logo-img.logo-color-change {
   -webkit-filter: brightness(0) invert(1);
@@ -3871,9 +3872,11 @@ header.affix .logo .logo-img {
 .logo-2 {
 	display: block;
 	padding:33px 0 25px 0;
-	-webkit-transition: all .4s ease 0s;
+  -webkit-transition: all .4s ease 0s;
 	-o-transition: all .4s ease 0s;
 	transition: all .4s ease 0s;
+ 
+
 }
 .header.no-transparent .logo-2 {
 	padding:26px 0 25px 0;
@@ -7896,7 +7899,7 @@ h2.portfolio-timeline-title {
     width:auto;
   }
 	.logo-2, .header.no-transparent .logo-2 {
-	  padding: 17px 0 17px 13px;
+	  padding: 17px 0 17px 0px;
 	}
 	.logo-row {
 		width:auto;
@@ -10182,6 +10185,8 @@ header.is-fixed {
 .affix-fix .logo-2 {
   padding-top: 17px !important;
   padding-bottom: 17px !important;
+  opacity: 0 !important;
+
 }
 
 /* #TWITTER FEEDS NEW ***************************************************/
@@ -10389,8 +10394,10 @@ ul#flickr-feeds li a, ul#flickr-sfeeds li a img {
   padding-top: 9px;
   padding-bottom: 9px;
   -webkit-transition: all .4s ease 0s;
-  -o-transition: all .4s ease 0s;
-  transition: all .4s ease 0s;
+	-o-transition: all .4s ease 0s;
+	transition: all .4s ease 0s;
+
+  
 }
 .header-side-menu.affix-fix .header-wrapper {
   background: transparent !important;
@@ -10441,6 +10448,7 @@ ul#flickr-feeds li a, ul#flickr-sfeeds li a img {
 .header-menu-left .logo-2{
   text-align:right;
   padding-right:15px;
+  
 }
 @media (max-width: 1024px) {
   .header-menu-left .menu-btn-respons-container {
@@ -10609,6 +10617,8 @@ ul#flickr-feeds li a, ul#flickr-sfeeds li a img {
   transition: all .3s cubic-bezier(0.000, 0.000, 0.580, 1.000);
   opacity:1;
 }
+
+
 
 /* #HEADER BELOW
 ***************************************************/ 
