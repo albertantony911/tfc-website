@@ -18,6 +18,42 @@
 /* This only works with JavaScript, 
 if it's not present, don't show loader */
 
+.cstm-height-card .card-img-top {
+  height: 100px;
+  object-fit: cover;
+ 
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.card-body {
+
+ 
+
+}
+
+.card-title {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 30px;
+
+
+}
+
+.card-text {
+    padding: 30px;
+    padding-top: 15px;
+    text-align: left;
+
+
+
+}
+
+
 #loader-overflow{
   display:block;
   width: 100%;
@@ -661,10 +697,10 @@ support for no js
 
 .bold-title-text{
 	font-family: 'Poppins',Arial,Helvetica,sans-serif;
-	font-size: 72px;
+	font-size: 40px;
 	line-height: 72px;
-	font-weight: 500;
-  letter-spacing:25px;
+	font-weight: 600;
+  letter-spacing:10px;
   color:var(--dark_purple);
 }
 
@@ -6857,6 +6893,16 @@ h3.ui-accordion-header:first-child {
   border-bottom-left-radius: 25px;
   
 }
+
+.pt-content-container-2 {
+	border: 3px solid var(--dark_purple);
+  border-top: none;
+  border-bottom: none;
+  
+}
+
+
+
 .pt-best .pt-content-container {
 	border-right:2px solid #fff;
 	border-left:2px solid #fff;
@@ -6889,11 +6935,24 @@ h3.ui-accordion-header:first-child {
 	margin: 0;
 	padding: 0;
 	display: block;
-	color: #6b6b6b;
+	color: #303030;
 	line-height: 50px;
 	border-bottom: 1px solid #efefef;
 	margin: 0 20px 20px 20px;
 }
+
+.c ul li {
+	
+	margin: 0;
+	padding: 0;
+	display: block;
+	color: #303030;
+	line-height: 50px;
+	border-bottom: 1px solid #efefef;
+	margin: 0 0px 0px 0px;
+}
+
+
 .price-container {
 	background:var(--dark_purple);
 	color:var(--white);
@@ -7007,6 +7066,11 @@ a.button.medium.price-button {
 	font-size:18px;
 	cursor:pointer;
 	text-align:center;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+
 }
 .price-col-gray2 a.button.medium.price-button:hover {
 	color:#fff;
@@ -7153,7 +7217,6 @@ a.button.medium.price-button {
 	color: #6b6b6b;
 	line-height: 50px;
 	border-bottom:1px solid #efefef;
-	margin-left:20px;
 }
 .pricing-table-2 ul li:last-child {
 	border-bottom:none;
@@ -10847,6 +10910,11 @@ ul#flickr-feeds li a, ul#flickr-sfeeds li a img {
 .filter-invert{
   -webkit-filter: brightness(0) invert(0);
           filter: brightness(0) invert(0);
+
+.process-text{
+  color: #303030;
+}
+
 }
 .filter-none{
   -webkit-filter: none;
@@ -10942,16 +11010,14 @@ ul#flickr-feeds li a, ul#flickr-sfeeds li a img {
   margin-left:60px;
   height:200px;
   width:200px;
-  background:#f6e701;
+  background:var(--light_purple);
   transition: background .27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
 }
 .work-proc2-a:hover .work-proc2-bg-block {
-  background:#5bd3be;
+  background:var(--light_purple);
   transition: background .27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
 }
-.bg-red2{
-	background-color:#e82340;
-}
+
 
 /*	#SLOGAN 1 #2.2
 ===============================================*/
