@@ -697,11 +697,12 @@ support for no js
 
 .bold-title-text{
 	font-family: 'Poppins',Arial,Helvetica,sans-serif;
-	font-size: 40px;
+	font-size: 30px;
 	line-height: 72px;
-	font-weight: 600;
-  letter-spacing:10px;
+	font-weight: 700;
+  letter-spacing:2px;
   color:var(--dark_purple);
+  
 }
 
 .bg-color{
@@ -710,11 +711,12 @@ support for no js
 
 .small-title-text{
 	font-family: 'Poppins',Arial,Helvetica,sans-serif;
-	font-size: 19px;
+	font-size: 17px;
 	line-height: 30px;
 	font-weight: 300;
   letter-spacing:1px;
   color:var(--dark_purple);
+  
 }
 
 
@@ -10460,7 +10462,7 @@ ul#flickr-feeds li a, ul#flickr-sfeeds li a img {
 .fs-table {
   display: table;
   width: 100%;
-  height: 100%;
+  height: 100%;  
   
   
 }
@@ -10468,6 +10470,7 @@ ul#flickr-feeds li a, ul#flickr-sfeeds li a img {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
+  
   
 }
 .logo-hiding {
@@ -10479,13 +10482,20 @@ ul#flickr-feeds li a, ul#flickr-sfeeds li a img {
   opacity:0;
   visibility:hidden;
 } 
+
+
+
 .fs-primary-nav.fs-sub-nav li {
   margin: 10px 0;
+  
+  
 }
 .fs-primary-nav.fs-sub-nav li a{
   font-size: 22px;
   color:var(--white);  
   letter-spacing: 3px;
+  vertical-align: middle;
+  
 }
 .fs-primary-nav.fs-sub-nav li a:hover{
   color: #97999c;
@@ -10506,11 +10516,12 @@ ul#flickr-feeds li a, ul#flickr-sfeeds li a img {
 }
 @media only screen and (max-width: 480px){
   .fs-primary-nav.fs-sub-nav li a {
-    padding: 5px 20px;
-    font-size: 16px;
+    padding: 4px 20px;
+    font-size: 17px;
     line-height:18px;
-    font-weight: 400; 
-    letter-spacing: 1px;
+    font-weight: 500; 
+    letter-spacing: 1.2px;
+    
   }  
 }
 .fs-a-sec{
